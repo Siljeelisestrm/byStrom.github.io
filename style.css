@@ -80,11 +80,11 @@ button.white{
     transition: 0.2s;
 }
 
-.textBackground{
+/*.textBackground{
     background-color: hsla(360, 100%, 100%, 0.59);
     padding: 10px;
     border-radius: 10px;
-}
+}*/
 
 body {
   width: 100%;
@@ -168,7 +168,7 @@ Farge ved hover, og på den som er active
     left: 20px;
 }
 
-#mobil{
+#mobile{
     display: none;
     align-items: center;
 }
@@ -178,7 +178,7 @@ Farge ved hover, og på den som er active
 ----------------------------------------------------------------------------------------------------*/
 
 #hero{
-    background-image: url(./image/hero/startbildeCropped-kopi.jpg);
+    background-image: url("./image/hero/IMG_3719.JPG");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -192,23 +192,31 @@ Farge ved hover, og på den som er active
 
 #hero h4{
 padding-bottom: 15px;
+color: #fff;
 }
+
+#hero h2{
+    padding-bottom: 15px;
+    color: #fff;
+    }
 
 #hero h1{
     color: hotpink;
     padding-bottom: 15px;
     }
 
-    #hero button{
-        background-image: url(./image/button.png);
-        background-color: transparent;
-        color: black;
-        border: 0;
-        padding: 14px 80px 14px 65px;
-        background-repeat: no-repeat;
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 15px;
+    #hero button{  
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.3s ease;
+    }
+
+    #hero button:hover{
+        background-color: hotpink;
+        border-color: hotpink;
         }
 
      
@@ -407,7 +415,7 @@ Gjør at bildet går inni ramma og får radius
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("./image/banner/restkjoler-kopi.jpg");
+    background-image: url("./image/banner/7-kopi.jpeg");
     min-width: 580px;
     height: 50vh;
     background-size: cover;
@@ -420,7 +428,7 @@ Gjør at bildet går inni ramma og får radius
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("./image/banner/kjole_stativ-kopi.jpg");
+    background-image: url("./image/banner/IMG_6297.JPG");
     min-width: 580px;
     height: 50vh;
     background-size: cover;
@@ -470,7 +478,7 @@ Gjør at bildet går inni ramma og får radius
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("./image/banner/IMG_5751-kopi.jpg");
+    background-image: url("./image/products/andre/2.jpg");
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -485,7 +493,7 @@ Gjør at bildet går inni ramma og får radius
 }
 
 #banner3 .banner-box3{
-    background-image: url("./image/banner/restkjoler-kopi.jpg");
+    background-image: url("./image/products/andre/4.jpg");
 }
 
 #banner3 h2{
@@ -620,17 +628,63 @@ text-align: center;
 /*-------------------------------------------------------------------------------------------------------
         Product details
 ---------------------------------------------------------------------------------------------------*/
-        #prodetails .single-pro-image{
+        #prodetails .single-pro-image{ /*Styler det store bildet*/
             width: 40%;
             margin-right: 50px;
         }
 
-        .small-img-group{
+        #prodetails{
+            display: flex;
+            margin-top: 20px;
+        }
+
+        #prodetails .single-pro-details{
+            width: 50%;
+            padding-top: 30px;
+        }
+
+        #prodetails .single-pro-details h4{
+            padding: 40px 0 20px 0;
+        }
+
+        #prodetails .single-pro-details select{
+            display: block;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+        }
+
+        #prodetails .single-pro-details input{  /*Styler antall feltet*/
+            width: 50px;
+            height: 47px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        #prodetails .single-pro-details button{ /* Styler hlegg i handlekurv knappen*/
+            background-color: hotpink;
+            color: #fff;
+        }
+
+        #prodetails .single-pro-details input:focus{ 
+            outline: none;                              /*Fjerner den mørke kanten rundt antall feltet*/
+        }
+
+
+        #prodetails .single-pro-details h2{
+            font-size: 26px;
+        }
+
+        #prodetails .single-pro-details span{
+            line-height: 25px;                  /* Endrer linje høyde på beskrivelse teksten*/
+        } 
+
+        .small-img-group{ /*Styler gruppen til de små bildene*/
             display: flex;
             justify-content: space-between;
         }
 
-        .small-img-col{
+        .small-img-col{ /*Styler hver enkelt av de små bildene*/
            flex-basis: 24%;
            cursor: pointer;
         }
@@ -662,12 +716,12 @@ text-align: center;
     #navbar li{
         margin-bottom: 25px;
     }
-    #mobil{
+    #mobile{
         display: flex;
         align-items: center;
     }
 
-    #mobil i{
+    #mobile i{
         color: #1a1a1a;
         font-size: 24px;
         padding-left: 20px;

@@ -37,7 +37,7 @@
     
     <div class="small-img-group">
         <div class="small-img-col">
-            <img src="./image/products/p5.JPG" width="100%" class="small-img " alt="">
+            <img src="./image/products/p1.jpg" width="100%" class="small-img " alt="">
         </div>
         <div class="small-img-col">
             <img src="./image/products/p5.JPG" width="100%" class="small-img " alt="">
@@ -60,7 +60,84 @@
         <option>S/M</option>
         <option>M/L</option>
     </select>
+    <input type="number" value="1">
+    <button class="normal">Legg i handlekurv</button>
+    <h4>Produkt informasjon</h4>
+    <span>Denne victoria kjolen er laget av et nydelig krepp stoff. Den er 100% bomull og passer
+        perfekt til varme sommerdager. Modellen på bildet er 177 cm høy og har på seg en størrelse S/M
+    </span>
 </div>
+</section>
+
+<section id="product1" class="section-p1">
+    <h2>Anbefalte produkter</h2>
+    <div class="pro-container">
+        <div class="pro">
+            <img src="./image/products/p1.jpg" class="proimg" alt="">
+            <div class="des">
+                <span>byStrøm</span>
+                <h5>Victoria</h5>
+                <div class="star"> <!-- Lager stjerner -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>1400,-</h4>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+            <img src="./image/products/p2.JPG" class="proimg" alt="">
+            <div class="des">
+                <span>byStrøm</span>
+                <h5>Victoria</h5>
+                <div class="star"> <!-- Lager stjerner -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>1400,-</h4>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+            <img src="./image/products/p3.jpg" class="proimg" alt="">
+            <div class="des">
+                <span>byStrøm</span>
+                <h5>Victoria</h5>
+                <div class="star"> <!-- Lager stjerner -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>1400,-</h4>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+            <img src="./image/products/p4.jpg" class="proimg" alt="">
+            <div class="des">
+                <span>byStrøm</span>
+                <h5>Simone</h5>
+                <div class="star"> <!-- Lager stjerner -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>1700,-</h4>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+    </div>
+
 </section>
 
 <footer class="section-p1">
@@ -97,6 +174,30 @@
     </div>
     
 </footer>
+
+<script>
+    var MainImg = document.getElementById("mainImg");
+    var smallimg = document.getElementsByClassName("small-img");
+
+    smallimg[0].onclick = function(){
+        mainImg.src = smallimg[0].src;
+    }
+    smallimg[1].onclick = function(){
+        mainImg.src = smallimg[1].src;
+    }
+    smallimg[2].onclick = function(){
+        mainImg.src = smallimg[2].src;
+    }
+    smallimg[3].onclick = function(){
+        mainImg.src = smallimg[3].src;
+    }
+
+</script>
+
+
+
+
+
     <script src="./script.js"></script>
 </body>
 </html>

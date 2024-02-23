@@ -689,6 +689,147 @@ text-align: center;
            cursor: pointer;
         }
 
+
+/*-------------------------------------------------------------------------------------------------------
+       About us
+---------------------------------------------------------------------------------------------------*/
+#about-header{
+text-align: center;
+margin-top: 50px;
+}
+
+#about-header h1{
+    font-weight: 400;
+    }
+
+
+#about .single-about-img{ /*Styler det store bildet*/
+    width: 40%;
+    margin-right: 50px;
+}
+
+#about{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+#about .single-about-details{
+    width: 40%;
+    padding-top: 30px;
+}
+
+#about .single-about-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#about .single-about-details span{
+    line-height: 25px;                  /* Endrer linje høyde på beskrivelse teksten*/
+} 
+
+#about img{
+    height: 400px;
+    width: auto;
+    border-radius: 30px;
+}
+
+
+/*---------------------
+    About Julie
+------------------------*/
+
+
+
+#aboutJulie img{
+    height: 400px;
+    width: auto;
+    border-radius: 30px;
+}
+
+
+
+#aboutJulie .single-aboutJulie-image{ /*Styler det store bildet*/
+    width: 40%;
+    margin-right: 50px;
+}
+
+#aboutJulie{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+#aboutJulie .single-aboutJulie-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#aboutJulie .single-aboutJulie-details h4{
+    padding: 40px 0 20px 0;
+}
+
+
+#aboutJulie .single-aboutJulie-details span{
+    line-height: 25px;                  /* Endrer linje høyde på beskrivelse teksten*/
+} 
+
+
+
+/*---------------------
+    About Silje
+------------------------*/
+
+
+
+#aboutSilje img{
+    height: 400px;
+    width: auto;
+    border-radius: 30px;
+}
+
+
+
+#aboutSilje .single-aboutSilje-image{ /*Styler det store bildet*/
+    width: 40%;
+    margin-right: 50px;
+}
+
+#aboutSilje{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+#aboutSilje .single-aboutSilje-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#aboutSilje .single-aboutSilje-details h4{
+    padding: 40px 0 20px 0;
+}
+
+
+#aboutSilje .single-aboutSilje-details span{
+    line-height: 25px;                  /* Endrer linje høyde på beskrivelse teksten*/
+} 
+
+        
+
+/*.button-value{
+    background-color: transparent;
+    padding: 1em 2.2em;
+    border: 2px solid hotpink;
+    border-radius: 3em;
+    color: hotpink;
+    cursor: pointer;   
+}
+
+.active{
+    background-color: hotpink;
+    color: #fff;
+}*/
+
 /*----------------------------------------------------------------------------------------------------
         Media Query
 ----------------------------------------------------------------------------------------------------*/
